@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import cl.example.generadorpassword.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
 /* TODO
  * MVP
@@ -14,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
  * Tomar tiempos por cada tarea
  * programar en forma paulatina
  * Tareas
- *  Crear repositorio en GitHub y compartir codigo y permisos para modificar
- * 1.- Modificar Build.gradle (activar viewBinding)
- *     Modificar MainActivity para activar viewBinding
- * 2.- Diseño layout
+ *  [X] Crear repositorio en GitHub y compartir codigo y permisos para modificar
+ * [X] 1.- Modificar Build.gradle (activar viewBinding)
+ * [X]   Modificar MainActivity para activar viewBinding
+ * [X] 2.- Diseño layout
  *
  *   Model
  * 3.- Generar clase parte del modelo (Verifier)
@@ -40,9 +42,15 @@ public class MainActivity extends AppCompatActivity {
  * 10.- agregar test unitarios para presentador
  *
  */
+
+   private ActivityMainBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+
     }
 }
