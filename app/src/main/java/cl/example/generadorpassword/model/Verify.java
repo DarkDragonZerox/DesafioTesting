@@ -4,10 +4,10 @@ import androidx.annotation.VisibleForTesting;
 
 public class Verify {
 
-    private static final int WEAK = 3;
-    private static final int MEDIUM = 4;
-    private static final int STRONG = 5;
-    private static final int VERYSTRONG = 10;
+    public static final int WEAK = 3;
+    public static final int MEDIUM = 4;
+    public static final int STRONG = 5;
+    public static final int VERYSTRONG = 10;
     private static final int LENGTHMIN = 5;
 
     /* REGLAS:
