@@ -1,5 +1,7 @@
 package cl.example.generadorpassword.model;
 
+import androidx.annotation.VisibleForTesting;
+
 public class Verify {
 
     private static final int WEAK = 3;
@@ -13,16 +15,18 @@ public class Verify {
       2. UNA LETRA MAYUSCULA (MIDIUM - STRONG)
       3. AL MENOS UN NUMERO (VERY STRONG)
      */
+    @VisibleForTesting
+    protected boolean lengthMin (String password){
 
-    private boolean lengthMin (String password){
-        return false;
+        return password.length()>=LENGTHMIN;
+    }
+    @VisibleForTesting
+    protected boolean upper (String password) {
+        return !password.equals(password.toLowerCase());
     }
 
-    private boolean upper (String password) {
-        return false;
-    }
-
-    private boolean digit (String password) {
+    @VisibleForTesting
+    protected boolean digit (String password) {
         return false;
     }
 

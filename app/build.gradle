@@ -40,4 +40,15 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //Truth
+    def truth_version = "1.0"
+    def truth_ext_version = "1.3.0"
+    testImplementation "com.google.truth:truth:$truth_version"
+    testImplementation "androidx.test.ext:truth:$truth_ext_version"
+    //Hamcrest
+    def ham_version = "2.2"
+    testImplementation "org.hamcrest:hamcrest:$ham_version"
+    testImplementation "org.hamcrest:hamcrest-library:$ham_version"
+
 }
