@@ -51,4 +51,9 @@ dependencies {
     testImplementation "org.hamcrest:hamcrest:$ham_version"
     testImplementation "org.hamcrest:hamcrest-library:$ham_version"
 
+    //Mockito
+    def mockito_version = "3.6.0"
+    testImplementation "org.mockito:mockito-core:$mockito_version"
+
+
 }
