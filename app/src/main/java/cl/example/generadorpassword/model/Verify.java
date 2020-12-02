@@ -26,8 +26,9 @@ public class Verify {
     }
 
     @VisibleForTesting
-    protected boolean digit (String password) {
-        return false;
+    protected boolean isDigit(String password) {
+
+        return password.matches(".*\\d.*");
     }
 
     public int checkPassword (String password) {
@@ -37,7 +38,7 @@ public class Verify {
          if  (!upper(password)){
              return MEDIUM;
          }
-         if (!digit(password)){
+         if (!isDigit(password)){
              return STRONG;
          }
            return VERYSTRONG;

@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements PresenterView {
  *
  *  test
  * 8.- [x]Agregar dependencias de test en build.gradle
- * 9.- [] agregar test unitarios para modelo
+ * 9.- [X] agregar test unitarios para modelo
  * 10.-0[] agregar test unitarios para presentador
  *
  */
